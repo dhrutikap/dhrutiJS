@@ -1,0 +1,22 @@
+JAVASCRIPT EVENTS
+
+abort		Occurs when the user cancels loading of an image
+blur		Occurs when input focus is removed from a form element (when the user clicks outside a field) or focus is removed from a window
+click		Occurs when the user clicks on a link or form element
+change		Occurs when the value of a form field is changed by the user
+error		Occurs when an error happens during loading of a document or image
+focus		Occurs when input focus is given to a form element or a window
+load		Occurs when a page is loaded into Navigator
+mouseout	Occurs when the user moves the pointer off of a link or clickable area of an image map
+mouseover	Occurs when the user moves the pointer over a hypertext link
+reset		Occurs when the user clears a form using the Reset button
+select		Occurs when the user selects a form element's field
+submit		Occurs when a form is submitted (i.e., when the user clicks on a submit button)
+unload		Occurs when the user leaves a page
+
+JAVASCRIPT EVENT HANDLERS
+
+onclick
+onhover
+onfocus
+etc, etc

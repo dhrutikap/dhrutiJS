@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+  <head>
+      <title> Variable & Arrays </title>
+      <script>
+         car = 'Honda';
+         car= 'Toyota'; //Last value will be taken always
+         var x =5;
+         var y= 10 ;
+         var a = '5'; //  act as String
+         var b ='10';
+         var cars= new Array('Honda','Toyota','Mazda');
+         cars[3] = 'Dodge';
+      </script>
+
+
+  </head>
+  <body>
+    <script>
+      document.write(car+'<br/>');
+      document.write(x+y+'<br/>');
+      document.write(a+b+'<br/>');
+      document.write('I have '+ x+' apples'+'<br/>');
+      document.write(cars[0]+'<br/>');
+      document.write(cars[3] +'<br/>');
+      document.write("Array length "+cars.length +'<br/>');
+      document.write(cars.indexOf("Toyota"));
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,69 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>JavaScript Conditionals</title>
+  </head>
+  <body>
+      <script>
+        var x = 7;
+        if(x > 5 && x < 10 && x <8){
+            alert('Yes it is!');
+        }else{
+          alert('No it is not!');
+        }
+
+        //else if example
+        var color='black';
+        if(color == 'red'){
+          document.write('the color is red');
+        }else if (color == 'blue') {
+          document.write('the color is blue');
+        }else {
+          document.write('the color is not red/blue');
+        }
+        document.write('<br/>');
+        //switch statement examples
+         a=1;
+         switch (a) {
+           case 2:
+              document.write('x is 2');
+              break;
+           case 5:
+              document.write('x is 5');
+              break;
+          default:
+              document.write('x is not 2 or 5');
+              break;
+
+         }
+
+         //switch another example
+         var day=new Date().getDay();
+        	switch (day){
+        		case 0:
+          			x="Today it's Sunday";
+          			break;
+        		case 1:
+          			x="Today it's Monday";
+          			break;
+        		case 2:
+          			x="Today it's Tuesday";
+          			break;
+        		case 3:
+          			x="Today it's Wednesday";
+          			break;
+        		case 4:
+          			x="Today it's Thursday";
+          			break;
+        		case 5:
+          			x="Today it's Friday";
+          			break;
+        		case 6:
+          			x="Today it's Saturday";
+          			break;
+        	}
+        	alert(x);
+      </script>
+  </body>
+
+</html>

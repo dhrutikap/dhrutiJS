@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      function sayHello(){
+        document.write('hello');
+      }
+      function sayIt(word1, word2){
+        document.write(word1+''+word2);
+      }
+      function sayItConditional(word1, word2){
+        word2 = word2 || 'World';
+        document.write(word1+''+word2);
+      }
+      function add(num1,num2){
+        sum = num1+ num2;
+        return sum;
+      }
+    </script>
+
+  </head>
+  <body>
+    <script>
+      sayHello();
+      sayIt("Dhrutika"+'<br/>'); // it is expecting two args, but not available so print undefined for 2nd arg
+      sayIt('Hello','World'+'<br/>');
+      sayItConditional('Hello');
+      document.write('<br/>');
+      document.write( add(5,5));
+    </script>
+  </body>
+</html>
