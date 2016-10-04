@@ -1,8 +1,8 @@
 <script>
 //Function Literal - function objects are created with function literals:
-/*var add = function(a, b){
+var add = function(a, b){
 	return a+b;
-};*/
+};
 var myObject={
    value:0,
    increment: function(inc){
@@ -14,4 +14,61 @@ document.writeln(myObject.value);
 
 myObject.increment(2);
 document.writeln(myObject.value);
+
+
+myObject.double = function (){
+  var that =this;
+
+  var helper = function(){
+    that.value = add(that.value, that.value);
+  };
+
+  helper();  //Invoke helper function.
+};
+//Invoke double as a method.
+
+myObject.double();
+document.writeln(myObject.value);
+
+//arguments example
+var sum = function(){
+  var i,sum=0;
+  for(i=0;i<arguments.length;i++){
+    sum+= arguments[i];
+  }
+  return sum;
+};
+document.writeln(sum(4,8,15,16,23,42));
+
+//Exceptions
+var add= function(a,b){
+  if(typeof a!== 'number'|| typeof b!=='number'){
+    throw{
+        name:'TypeError',
+        message: 'add needs numbers'
+    };
+  }
+  return a+b;
+};
+try{
+add("seven",5);
+}
+catch(e){
+  document.writeln(e.name+':'+e.message);
+}
+
+//Augmenting Types
+
+//Recursive
+var hanoi = function hanoi(disc,src,aux,dest){
+  if(disc > 0){
+    hanoi(disc-1,src,dest,aux);
+    document.writeln('Move disc '+ disc +' from '+src+' to '+dest+'<br/>');
+    hanoi(disc-1,aux,src,dest);
+  }
+  };
+
+  hanoi(3, 'src','aux','dest');
+
+
 </script>
