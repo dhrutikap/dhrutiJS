@@ -70,5 +70,30 @@ var hanoi = function hanoi(disc,src,aux,dest){
 
   hanoi(3, 'src','aux','dest');
 
+	//Recursive- factorial
+	var factorial = function factorial(i,a){
+		a= a || 1;
+		if( i< 2){
+			return a;
+		}
+		return factorial(i-1,a*i);
+	};
+	document.writeln(factorial(5));
+
+	//Scope
+
+	var foo = function(){
+  	var a=3; b=5;
+
+		var bar = function(){
+			var b= 7,c=11;
+
+			a+=b+c;
+		};
+
+		//bar();- c won't be accessible here
+
+
+	};
 
 </script>
