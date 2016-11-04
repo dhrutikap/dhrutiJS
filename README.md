@@ -26,6 +26,10 @@ var add = function(a, b){
 	return a+b;
 };
 
+Closure:
+--------
+A closure is a special kind of object that combines two things: a function, and the environment in which that function was created.
+
 
                   
 
